@@ -65,3 +65,5 @@ for SERVER in "${SERVER_LIST[@]}"; do
 done
 
 rm /tmp/$NEW_TRANSPORT_NAME
+# Optionally, you can uncomment the below line to clean up the /etc/postfix directory during each script run by removing backed up transport files older than 7 days.
+# find /etc/postfix -name "transport_*" -type f -mtime +7 -exec rm -f {} \;
