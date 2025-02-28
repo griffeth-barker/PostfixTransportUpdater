@@ -31,6 +31,11 @@ It is highly recommended that you restrict permissions to this file to only the 
 
 You will also need to update the variables at the start of the script to reflect the app registration you created as well as next hops for your environment.
 
+Finally, make the script executable:
+```bash
+chmod +x /path/to/PostfixTransportUpdater.sh
+```
+
 ### Schedule the script
 You can schedule this script to automatically run on a schedule by adding this line to crontab (be sure to update the file path to the real file path):
 ```
