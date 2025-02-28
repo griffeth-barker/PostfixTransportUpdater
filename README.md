@@ -27,6 +27,8 @@ git clone https://github.com/griffeth-barker/PostfixTransportUpdater.git
 Once you've cloned the repo, update the `secret` file's contents to be the value of the secret for the app registration in Entra ID.
 It is highly recommended that you restrict permissions to this file to only the owner.
 
+You will also need to update the variables at the start of the script to reflect the app registration you created as well as next hops for your environment.
+
 ### Schedule the script
 You can schedule this script to automatically run on a schedule by adding this line to crontab (be sure to update the file path to the real file path):
 ```
